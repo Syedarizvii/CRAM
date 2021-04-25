@@ -33,7 +33,7 @@ export default class OTP extends React.Component {
 
     _verifyCode = async () => {
         const e = this.state.code + this.state.pno;
-        await axios.get("http://localhost:5000/api/verify/verifycode", {
+        await axios.get("api/verify/verifycode", {
             params: {
                 phonenumber: e,
                 code: this.state.otp
@@ -41,7 +41,7 @@ export default class OTP extends React.Component {
         })
             .then(response => {
                 if (response.data.status === "approved"){
-                    window.location.href = "http://localhost:3000/otpsuccessfull";}
+                    window.location.href = "/otpsuccessfull";}
                     // if(!alert("Verification Successful...Now you can register your account.")) 
                     //     window.location.href = "http://localhost:3000/register";
                     // }

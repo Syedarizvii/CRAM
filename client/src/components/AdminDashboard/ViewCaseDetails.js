@@ -19,7 +19,7 @@ class ViewCaseDetails extends Component {
   getCaseById() {
     axios
       .get(
-        "http://localhost:5000/api/addcrime/edit-status/" +
+        "api/addcrime/edit-status/" +
           this.props.match.params._id
       )
       .then((response) => {

@@ -24,7 +24,7 @@ class Dashboard extends Component {
   }
 
   getData() {
-    axios.get("http://localhost:5000/api/addcrime/viewcrimes").then((res) => {
+    axios.get("api/addcrime/viewcrimes").then((res) => {
       const data = res.data;
       this.setState({ case: data.crime });
     });

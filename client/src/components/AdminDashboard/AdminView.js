@@ -27,7 +27,7 @@ class View extends Component {
   }
 
   getData() {
-    axios.get("http://localhost:5000/api/addcrime/viewcrimes").then((res) => {
+    axios.get("api/addcrime/viewcrimes").then((res) => {
       var data = res.data;
       this.setState({ case: data.crime, cases_list: data.crime });
     });
