@@ -8,7 +8,7 @@ import SidenavbarwithoutLogout from './sidenavbarwithoutLogout';
 
 function submitForm(contentType, data, setResponse) {
   axios({
-    url: "api/addcrime/addCrime",
+    url: "/api/addcrime/addCrime",
     method: "POST",
     data: data,
     headers: {
