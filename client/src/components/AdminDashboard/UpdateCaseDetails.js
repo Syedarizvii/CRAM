@@ -28,7 +28,7 @@ class UpdateCaseDetails extends Component {
   getCaseById() {
     axios
       .get(
-        "http://localhost:5000/api/addcrime/edit-status/" +
+        "api/addcrime/edit-status/" +
           this.props.match.params._id
       )
       .then((res) => {
@@ -52,7 +52,7 @@ class UpdateCaseDetails extends Component {
 
     axios
       .put(
-        "http://localhost:5000/api/addcrime/updateCaseDetails/" +
+        "api/addcrime/updateCaseDetails/" +
           this.props.match.params._id,
         {
           investigated_by: investigated_by,

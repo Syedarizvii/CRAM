@@ -20,7 +20,7 @@ export default class OTP extends React.Component {
     }
     _getCode = async () => {
         const e = this.state.code + this.state.pno;
-        await axios.get("http://localhost:5000/api/verify/getcode", {
+        await axios.get("api/verify/getcode", {
             params: {
                 phonenumber: e,
                 channel: 'sms'

@@ -8,7 +8,7 @@ import SidenavbarwithoutLogout from './sidenavbarwithoutLogout';
 
 function submitForm(contentType, data, setResponse) {
   axios({
-    url: "http://localhost:5000/api/addcrime/addCrime",
+    url: "api/addcrime/addCrime",
     method: "POST",
     data: data,
     headers: {
@@ -18,7 +18,7 @@ function submitForm(contentType, data, setResponse) {
     .then(response => {
       setResponse(response.data);
       if (response.status === 201) {
-        window.location.href = "http://localhost:3000/reportsuccessfull";
+        window.location.href = "/reportsuccessfull";
       }
       else {
         alert("opertion unsuccessful")

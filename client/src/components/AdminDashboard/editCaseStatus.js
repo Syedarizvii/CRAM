@@ -20,7 +20,7 @@ class EditStatus extends Component {
   getCaseById() {
     axios
       .get(
-        "http://localhost:5000/api/addcrime/edit-status/" +
+        "api/addcrime/edit-status/" +
           this.props.match.params._id
       )
       .then((res) => {
@@ -42,7 +42,7 @@ class EditStatus extends Component {
     const { status } = this.state;
     axios
       .put(
-        "http://localhost:5000/api/addcrime/updateCaseStatus/" +
+        "api/addcrime/updateCaseStatus/" +
           this.props.match.params._id,
         {
           status: status,
