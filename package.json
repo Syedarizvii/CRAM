@@ -1,7 +1,7 @@
 {
   "name": "e-crime-system",
   "version": "1.0.0",
-  "description": "E-Crime-System",
+  "description": "E-crime-system",
   "main": "server.js",
   "scripts": {
     "client-install": "npm install --prefix client",
