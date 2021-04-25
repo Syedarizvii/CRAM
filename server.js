@@ -74,6 +74,10 @@ if(process.env.NODE_ENV === 'production') {
   app.get('*',(req,res) => {
     res.sendFile(path.json(__dirname,'client' ,'build', 'index.html'));
   });
+
+app.post('*',(req,res) => {
+  res.sendFile(path.json(__dirname,'client' ,'build', 'index.html'));
+});
 }
 
 app.listen(port, () => console.log(`Server up and running on port ${port} !`));
