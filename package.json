@@ -1,7 +1,7 @@
 {
-  "name": "mern-auth",
+  "name": "e-crime-system",
   "version": "1.0.0",
-  "description": "Mern Auth Example",
+  "description": "E-Crime-System",
   "main": "server.js",
   "scripts": {
     "client-install": "npm install --prefix client",
