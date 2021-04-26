@@ -231,9 +231,6 @@ class View extends Component {
                               Case Details
                             </Link>
                           </MDBBtn>
-                          <button>
-                            <Link to={"viewcase/" + item._id}>Details</Link>
-                          </button>
                         </MDBCol>
                       </MDBRow>
                     </MDBCardText>
