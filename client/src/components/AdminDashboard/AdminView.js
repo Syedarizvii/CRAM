@@ -220,7 +220,7 @@ class View extends Component {
                           </MDBBtn>
                           <MDBBtn gradient="blue">
                             <Link
-                              to={"view-case-history/" + item._id}
+                              to={"viewcase/" + item._id}
                               style={{
                                 color: "white",
                                 fontSize: "15px",

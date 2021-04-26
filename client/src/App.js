@@ -20,7 +20,7 @@ import Signin from './components/auth/signin';
 import AdminCases from './components/AdminDashboard/AdminView';
 import EditStatus from './components/AdminDashboard/editCaseStatus';
 import UpdateCaseDetails from './components/AdminDashboard/UpdateCaseDetails';
-import ViewCaseDetails from './components/AdminDashboard/ViewCaseDetails';
+import ViewCaseDetails from './components/AdminDashboard/viewcase';
 
 
 import "./style.css";
@@ -65,7 +65,7 @@ class App extends Component {
               <PrivateRoute exact path ="/reportsuccessfull" component ={Reportsuccessfull} />  
               <PrivateRoute exact path="/edit-status/:_id" component={EditStatus} />
               <PrivateRoute exact path="/update-case-history/:_id" component={UpdateCaseDetails} />
-              <PrivateRoute exact path="/view-case-history/:_id" component={ViewCaseDetails} />
+              <PrivateRoute exact path="/viewcase/:_id" component={ViewCaseDetails} />
             </Switch>
           </div>
         </Router>
