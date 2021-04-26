@@ -20,7 +20,7 @@ class EditStatus extends Component {
   getCaseById() {
     axios
       .get(
-        "/api/addcrime/edit-status/" +
+        "/api/addcrime/editstatus/" +
           this.props.match.params._id
       )
       .then((res) => {

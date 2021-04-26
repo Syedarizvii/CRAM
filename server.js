@@ -65,7 +65,7 @@ app.use(express.static('./public/uploads'))
 app.use('/api/addCrime', Crime );
 app.use('/api/viewcrimes', Crime );
 app.use('/api/UpdateCaseStatus',Crime);
-app.use('/api/edit-status',Crime);
+app.use('/api/editstatus',Crime);
 const port = process.env.PORT || 5000;
 
 if(process.env.NODE_ENV === 'production') {

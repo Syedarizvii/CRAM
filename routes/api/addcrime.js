@@ -97,7 +97,7 @@ router.get("/viewcrimes", (req, res, next) => {
     });
 });
 //get id
-router.get("/edit-status/:_id", (req, res, next) => {
+router.get("/editstatus/:_id", (req, res, next) => {
   Crime.findById(req.params._id, (error, data) => {
     if (error) {
       return next(error)
