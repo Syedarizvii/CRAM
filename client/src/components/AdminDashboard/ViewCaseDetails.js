@@ -7,9 +7,7 @@ import { MDBRow, MDBCol, MDBCardText, MDBCard, MDBCardBody } from "mdbreact";
 class ViewCaseDetails extends Component {
   constructor(props) {
     super(props);
-    this.state = {
-      cases_list: [],
-    };
+ 
   }
   componentDidMount = () => {
     this.getCaseById();
@@ -19,7 +17,7 @@ class ViewCaseDetails extends Component {
   getCaseById() {
     axios
       .get(
-        "api/addcrime/edit-status/" +
+        "/api/addcrime/edit-status/" +
           this.props.match.params._id
       )
       .then((response) => {
