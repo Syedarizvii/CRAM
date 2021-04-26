@@ -44,7 +44,7 @@ const CrimeSchema = new mongoose.Schema({
   },
   designation:{
     type: String,
-    required: true
+    // required: true
   }
 });
 
