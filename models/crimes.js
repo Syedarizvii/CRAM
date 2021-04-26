@@ -39,8 +39,8 @@ const CrimeSchema = new mongoose.Schema({
     required: true,
   },
   investigated_by:{
-    type: String,
-    required: true
+    type: String
+    // required: true
   },
   designation:{
     type: String
