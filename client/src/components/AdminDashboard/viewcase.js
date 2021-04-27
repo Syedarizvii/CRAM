@@ -120,7 +120,7 @@ class ViewCaseDetails extends Component {
      
    // To get Case based on ID
    getCaseById() {
-      axios.get("/api/addcrime/edit-status/" + this.props.match.params._id)
+      axios.get("/api/addcrime/editstatus/" + this.props.match.params._id)
          .then((response) => {
             console.log(response.data);
             console.log(response.data.designation);
