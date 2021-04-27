@@ -6,32 +6,32 @@ import SideNavigationforAdminwithoutLogout from "./SideNavigationforAdminwithout
 import { MDBRow, MDBCol, MDBCardText, MDBCard, MDBCardBody } from "mdbreact";
 
 class ViewCaseDetails extends Component {
-  constructor(props) {
-    super(props);
+  // constructor(props) {
+  //   super(props);
  
-  }
-  componentDidMount = () => {
-    this.getCaseById();
-  };
+  // }
+  // componentDidMount = () => {
+  //   this.getCaseById();
+  // };
 
-  // To get Case based on ID
-  getCaseById() {
-    axios
-      .get(
-        "api/addcrime/editstatus/" +
-          this.props.match.params._id
-      )
-      .then((response) => {
-        this.setState({
-          designation: response.data.designation,
-          investigated_by: response.data.investigated_by,
-          status: response.data.status,
-        });
-      })
-      .catch((error) => {
-        console.log(error);
-      });
-  }
+  // // To get Case based on ID
+  // getCaseById() {
+  //   axios
+  //     .get(
+  //       "api/addcrime/editstatus/" +
+  //         this.props.match.params._id
+  //     )
+  //     .then((response) => {
+  //       this.setState({
+  //         designation: response.data.designation,
+  //         investigated_by: response.data.investigated_by,
+  //         status: response.data.status,
+  //       });
+  //     })
+  //     .catch((error) => {
+  //       console.log(error);
+  //     });
+  // }
   render() {
     return (
       <div>
