@@ -18,10 +18,7 @@ function submitForm(contentType, data, setResponse) {
     .then(response => {
       setResponse(response.data);
       if (response.status === 201) {
-        window.location.replace = "https://e-crime-system-acc.herokuapp.com/reportsuccessfull";
-        // this.state.history.push('/reportsuccessfull')
-        // var url = "http://stackoverflow.com";    
-        // $(location).attr('href',url);
+        window.location.href = "https://e-crime-system-acc.herokuapp.com/reportsuccessfull";
       }
       else {
         alert("Opertion Unsuccessful")
