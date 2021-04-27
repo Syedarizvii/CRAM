@@ -1,6 +1,6 @@
 const SERVICE_SID = "VA93d7acc82c0c82ba04a7e3fccef560bf";
 const ACCOUNT_SID = "AC7ef7e43edfa60c14e311066d7345eee3";
-const AUTH_TOKEN = "439731d8ccd6382bb76a7783d93c8e3f";
+const AUTH_TOKEN = "e2d324c1d8e55a56c579bec6d8a0ca34";
 
 const client = require("twilio")(ACCOUNT_SID, AUTH_TOKEN);
 //get code
