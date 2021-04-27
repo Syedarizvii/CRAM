@@ -37,7 +37,9 @@ router.post("/addCrime", upload.single("file"), (req, res, next) => {
     file: req.file.filename,
     location: req.body.location,
     Province: req.body.Province,
-    status: "Pending"
+    status: "Pending",
+    investigated_by :"Not Assigned Yet",
+    designation : "Not Assigned"
   });
 
   crime
