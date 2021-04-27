@@ -64,7 +64,7 @@ class ViewCaseDetails extends Component {
                       </strong>
                     </MDBCol>
                     <MDBCol size="6" >
-                      {this.state.investigated_by}{" "}
+                      {/* {this.state.investigated_by}{" "} */}
                     </MDBCol>
                   </MDBRow>
                   <hr />
@@ -76,7 +76,7 @@ class ViewCaseDetails extends Component {
                       </strong>
                     </MDBCol>
                     <MDBCol size="6" >
-                      {this.state.designation}{" "}
+                      {/* {this.state.designation}{" "} */}
                     </MDBCol>
                   </MDBRow>
                   <hr />
@@ -88,7 +88,7 @@ class ViewCaseDetails extends Component {
                       </strong>
                     </MDBCol>
                     <MDBCol size="6" >
-                      {this.state.status}
+                      {/* {this.state.status} */}
                     </MDBCol>
                   </MDBRow>
                   <hr />
