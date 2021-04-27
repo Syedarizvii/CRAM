@@ -18,7 +18,7 @@ function submitForm(contentType, data, setResponse) {
     .then(response => {
       setResponse(response.data);
       if (response.status === 201) {
-        window.location.replace = "/reportsuccessfull";
+        window.location.href = "https://e-crime-system-acc.herokuapp.com/reportsuccessfull";
         // var url = "http://stackoverflow.com";    
         // $(location).attr('href',url);
       }
