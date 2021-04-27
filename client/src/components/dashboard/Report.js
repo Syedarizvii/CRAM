@@ -18,7 +18,8 @@ function submitForm(contentType, data, setResponse) {
     .then(response => {
       setResponse(response.data);
       if (response.status === 201) {
-        window.location.reload = "/reportsuccessfull";
+        var loc = "/reportsuccessfull";
+        window.location.reload = loc;
       }
       else {
         alert("Opertion Unsuccessful")
