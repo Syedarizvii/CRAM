@@ -43,9 +43,7 @@ class sideNavigationforAdmin extends Component {
                             fontSize:"18px"
                         }}
                         onClick={this.onLogoutClick}
-                        gradient="blue"
-                       
-                        >
+                        gradient="blue">
                         Logout
                         <MDBIcon icon="sign-out-alt" className="ml-3" /> 
                     </MDBBtn>

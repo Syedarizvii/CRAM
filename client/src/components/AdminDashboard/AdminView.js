@@ -192,7 +192,6 @@ class View extends Component {
                       <MDBRow className="text-center">
                         <br />
                         <MDBCol>
-                          <MDBBtn gradient="blue">
                             <Link
                               to={"edit-status/" + item._id}
                               style={{
@@ -201,11 +200,10 @@ class View extends Component {
                                 letterSpacing: "1px",
                                 wordSpacing: "4px",
                               }}
+                              className="btn btn-primary"
                             >
-                              Edit Status
+                             Edit Status
                             </Link>
-                          </MDBBtn>
-                          <MDBBtn gradient="blue">
                             <Link
                               to={"update-case-history/" + item._id}
                               style={{
@@ -213,12 +211,12 @@ class View extends Component {
                                 fontSize: "15px",
                                 letterSpacing: "1px",
                                 wordSpacing: "4px",
+
                               }}
+                              className="btn btn-primary"
                             >
                               Assigned To
                             </Link>
-                          </MDBBtn>
-                          <MDBBtn gradient="blue">
                             <Link
                               to={"viewcase/" + item._id}
                               style={{
@@ -227,10 +225,10 @@ class View extends Component {
                                 letterSpacing: "1px",
                                 wordSpacing: "4px",
                               }}
+                              className="btn btn-primary"
                             >
                               Case Details
                             </Link>
-                          </MDBBtn>
                         </MDBCol>
                       </MDBRow>
                     </MDBCardText>
