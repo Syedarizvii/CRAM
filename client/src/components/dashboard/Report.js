@@ -18,7 +18,9 @@ function submitForm(contentType, data, setResponse) {
     .then(response => {
       setResponse(response.data);
       if (response.status === 201) {
-        window.location.href = "/reportsuccessfull";
+        window.location.replace = "/reportsuccessfull";
+        // var url = "http://stackoverflow.com";    
+        // $(location).attr('href',url);
       }
       else {
         alert("opertion unsuccessful")

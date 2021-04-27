@@ -24,15 +24,14 @@ class TopNavigation extends Component {
                         <MDBListGroupItem>
                             <MDBIcon icon="chart-pie" className="mr-3" />
                         Dashboard
-                    </MDBListGroupItem>
+                    </MDBListGroupItem> </Link>
+
                     <Link to="/" activeClassName="activeClass">
                         <MDBListGroupItem>
                             <MDBIcon icon="user" className="mr-3" />
                         Home
-                    </MDBListGroupItem>
-                    </Link>
+                    </MDBListGroupItem> </Link>
 
-                    </Link>
                     <Link to="/report" activeClassName="activeClass">
                         <MDBListGroupItem>
                             <MDBIcon icon="edit" className="mr-3" />

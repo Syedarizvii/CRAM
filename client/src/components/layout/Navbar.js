@@ -77,14 +77,6 @@ class NavbarPage extends Component {
                 className="white-text home-options"
               >Sign In</Link>
             </MDBNavItem>
-            <MDBNavItem>
-              <Link to="/register"
-                style={{
-                  fontSize: "18px"
-                }}
-                className="white-text dashboard-options"
-              >regiaster</Link>
-            </MDBNavItem>
           </MDBNavbarNav>
         </MDBCollapse>
       </MDBNavbar>
