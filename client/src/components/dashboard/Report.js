@@ -18,7 +18,7 @@ function submitForm(contentType, data, setResponse) {
     .then(response => {
       setResponse(response.data);
       if (response.status === 201) {
-        window.location.href = "https://e-crime-system-acc.herokuapp.com/reportsuccessfull";
+        window.location.reload = "/reportsuccessfull";
       }
       else {
         alert("Opertion Unsuccessful")
