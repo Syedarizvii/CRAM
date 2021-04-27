@@ -41,7 +41,8 @@ export default class OTP extends React.Component {
         })
             .then(response => {
                 if (response.data.status === "approved"){
-                    window.location.href = "/otpsuccessfull";}
+                   // window.location.href = "/otpsuccessfull";}
+                    this.props.history.push('/otpsuccessfull');}
                     // if(!alert("Verification Successful...Now you can register your account.")) 
                     //     window.location.href = "http://localhost:3000/register";
                     // }
