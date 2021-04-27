@@ -105,55 +105,56 @@
 // export default ViewCaseDetails;
 
 
-
 import React, { Component } from 'react';
 import axios from 'axios';
-
 class ViewCaseDetails extends Component {
    constructor(props) {
       super(props);
-     
-   }
-   componentDidMount = () => {
-      this.getCaseById();
-   }
+      this.state = {
+         cases_list: {}
+      
+       };
+      
+       };
 
+     
    // To get Case based on ID
    getCaseById() {
-      axios.get('/api/addcrime/editstatus/' + this.props.match.params._id)
+      axios.get("/api/addcrime/edit-status/" + this.props.match.params._id)
          .then((response) => {
-            this.setState({
-               designation: response.data.designation,
-               investigated_by: response.data.investigated_by,
-               status: response.data.status
-            });
+            console.log(response.data);
+            console.log(response.data.designation);
+            var data = response.data;
+      this.setState({ cases_list: data });
          })
          .catch((error) => {
             console.log(error);
          })
    }
+  
+ 
+   componentDidMount = () => {
+      this.getCaseById();
+   }
+   
    render() {
-
+  console.log(this.state.cases_list)  
       return (
          <div className="container">
             <h1>
                investigated By:
-               {this.state.investigated_by}
+               {this.state.cases_list.investigated_by}
                <br />
                Designation:
-               {this.state.designation}
+               {this.state.cases_list.designation}
                <br />
                Case Status:
-               {this.state.status}
+               {this.state.cases_list.status}
+
+
             </h1>
          </div>
       );
    }
 }
 export default ViewCaseDetails;
-
-
-
-
-
-
