@@ -18,7 +18,7 @@ function submitForm(contentType, data, setResponse) {
     .then(response => {
       setResponse(response.data);
       if (response.status === 201) {
-        window.location = "https://e-crime-system-acc.herokuapp.com/e-crime-system-acc/reportsuccessfull";
+        window.location = "https://e-crime-system-acc.herokuapp.com/reportsuccessfull";
         // alert("Thank You! Your FIR Has Been Successfully Registered");
       }
       else {
