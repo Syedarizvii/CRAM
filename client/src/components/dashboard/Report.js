@@ -18,8 +18,8 @@ function submitForm(contentType, data, setResponse) {
     .then(response => {
       setResponse(response.data);
       if (response.status === 201) {
-        // window.location = "/reportsuccessfull";
-        alert("Thank You! Your FIR Has Been Successfully Registered");
+        window.location = "/reportsuccessfull";
+        // alert("Thank You! Your FIR Has Been Successfully Registered");
       }
       else {
         alert("Opertion Unsuccessful")
