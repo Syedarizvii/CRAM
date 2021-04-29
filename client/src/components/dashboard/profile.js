@@ -26,35 +26,35 @@ class Profile extends Component {
       <div>
         <DashboardNavbarwithoutLogout />
         <SidenavbarwithoutLogout />
-        <main id="content" className="p-5">
+        <main id="content">
           <Routes />
-          <MDBContainer className="mt-3">
+          <MDBContainer className="mt-3 mb-4">
             <MDBEdgeHeader color="mdb-color darken-2"></MDBEdgeHeader>
             <MDBFreeBird>
               <MDBRow>
                 <MDBCol
                   md="10"
                   lg="8"
-                  className="mx-auto float-none white z-depth-1"
+                  className="mx-auto float-none white z-depth-1 "
                 >
                   <MDBCardBody>
                     <div>
                       <div className="row">
                         <div
-                          className="landing-copy col s12 center-align responsive-profile"
+                          className="landing-copy col s12 center-align responsive-profile Profile-Card"
                           style={{
-                            fontSize: "23px",
+                            fontSize: "18px",
                             // fontFamily: "Lato",
-                            fontWeight: "bold",
+                            // fontWeight: "bold",
                           }}
                         >
                           <h4
                             style={{
                               color: "#00247E",
                               textAlign: "center",
-                              fontSize: "60px",
+                              // fontSize: "60px",
                             }}
-                            className="font-weight-bold signup-signin-heading"
+                            className="signup-signin-heading"
                           >
                             Your Profile Details
                           </h4>
@@ -63,49 +63,49 @@ class Profile extends Component {
                           </div>
                           <br />
                           <p>
-                            <MDBRow className="p-4">
-                              <MDBCol size="5">
+                            <MDBRow className="pt-4 pb-4">
+                              <MDBCol size="5" sm="6" xs="6" md="5" >
                                 <MDBIcon
                                   icon="user-alt"
                                   className="profile-Icon mr-3"
                                 />
                                 Name:
                               </MDBCol>
-                              <MDBCol size="7">{user.name}</MDBCol>
+                              <MDBCol size="7" sm="6" xs="6" md="7" className="Profile-Card">{user.name}</MDBCol>
                             </MDBRow>
-                            <MDBRow className="p-4">
-                              <MDBCol size="5">
+                            <MDBRow className="pt-4 pb-4">
+                              <MDBCol size="5" sm="6" xs="6" md="5">
                                 <MDBIcon
                                   icon="city"
                                   className="profile-Icon mr-3"
                                 />
                                 City:
                               </MDBCol>
-                              <MDBCol size="7">{user.city}</MDBCol>
+                              <MDBCol size="7" sm="6" xs="6" md="7" className="Profile-Card">{user.city}</MDBCol>
                             </MDBRow>{" "}
-                            <MDBRow className="p-4">
-                              <MDBCol size="5">
+                            <MDBRow className="pt-4 pb-4">
+                              <MDBCol size="5" sm="6" xs="6" md="5">
                                 <MDBIcon
                                   far
                                   icon="envelope"
                                   className="profile-Icon mr-3"
                                 />
-                                Email
+                                Email:
                               </MDBCol>
-                              <MDBCol size="7">{user.email}</MDBCol>
+                              <MDBCol size="7" sm="6" xs="6" md="7" className="Profile-Card">{user.email}</MDBCol>
                             </MDBRow>{" "}
-                            <MDBRow className="p-4">
-                              <MDBCol>
+                            <MDBRow className="pt-4 pb-4">
+                              <MDBCol size="5" sm="6" xs="6" md="5" >
                                 <MDBIcon
                                   icon="mobile-alt"
-                                  className="profile-Icon mr-2"
+                                  className="profile-Icon mr-3"
                                 />
-                                Phone Number:
+                                Number:
                               </MDBCol>
-                              <MDBCol size="7">{user.phone_no}</MDBCol>
+                              <MDBCol size="7" sm="6" xs="6" md="7" className="Profile-Card">{user.phone_no}</MDBCol>
                             </MDBRow>{" "}
-                            <MDBRow className="p-4">
-                              <MDBCol size="5">
+                            <MDBRow className="pt-4 pb-4">
+                              <MDBCol size="5" sm="6" xs="6" md="5" >
                                 <MDBIcon
                                   far
                                   icon="address-card"
@@ -113,7 +113,7 @@ class Profile extends Component {
                                 />
                                 NIC:
                               </MDBCol>
-                              <MDBCol size="7">{user.nic}</MDBCol>
+                              <MDBCol size="7" sm="6" xs="6" md="7" className="Profile-Card">{user.nic}</MDBCol>
                             </MDBRow>
                           </p>
                         </div>

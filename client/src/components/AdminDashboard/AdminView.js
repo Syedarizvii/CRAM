@@ -110,15 +110,15 @@ class View extends Component {
               <MDBContainer>
                 <MDBCard
                   className="note note-primary mx-2 my-4 View-Cards"
-                  style={{
-                    boxShadow: "7px 7px 5px 0px rgba(50, 50, 50, 0.75)",
-                  }}
+                  // style={{
+                  //   boxShadow: "7px 7px 5px 0px rgba(50, 50, 50, 0.75)",
+                  // }}
                 >
                   <h6
                     style={{ color: "#00247E", textDecoration: "underline" }}
                     className="font-weight-bold"
                   >
-                    Your Complaint Details
+                    Complaint Details
                   </h6>
                   <MDBCardBody className="Card-Body">
                     <MDBCardText>

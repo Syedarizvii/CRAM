@@ -31,7 +31,7 @@ class Dashboard extends Component {
           <div>
             <DashboardNavbar />
             <SideNavigation />
-            <main id="content" className="p-5">
+            <main id="content">
               <Routes />
             </main>
           </div>

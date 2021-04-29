@@ -57,7 +57,7 @@ function Report() {
     <div>
       <DashboardNavbarwithoutLogout/>
       <SidenavbarwithoutLogout />
-      <main id="content" className="p-5">
+      <main id="content">
         <Routes />
         <MDBContainer className="d-flex justify-content-center pt-5 pb-5">
           <MDBRow>

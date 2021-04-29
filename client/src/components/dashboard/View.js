@@ -51,7 +51,7 @@ class View extends Component {
 
     return (
       <div id="View">
-        <MDBCard className="mb-5">
+        <MDBCard className="mb-5 ml-5 mr-5">
           <MDBCardBody
             id="breadcrumb"
             className="d-flex align-items-center justify-content-between"
@@ -89,10 +89,10 @@ class View extends Component {
             .map((item) => (
               <MDBContainer>
                 <MDBCard
-                  className="note note-primary mx-3 my-4"
-                  style={{
-                    boxShadow: "7px 7px 5px 0px rgba(50, 50, 50, 0.75)",
-                  }}
+                  className="note note-primary mx-2 my-4 View-Cards"
+                  // style={{
+                  //   boxShadow: "7px 7px 5px 0px rgba(50, 50, 50, 0.75)",
+                  // }}
                 >
                   <h6
                     style={{ color: "#00247E", textDecoration: "underline" }}
@@ -100,68 +100,68 @@ class View extends Component {
                   >
                     Your Complaint Details
                   </h6>
-                  <MDBCardBody>
+                  <MDBCardBody className="Card-Body">
                     <MDBCardText>
                       <MDBRow className="p-1">
-                        <MDBCol size="5">
+                        <MDBCol size="5" sm="6" xs="6" md="6">
                           <strong>Reported By: </strong>
                         </MDBCol>
-                        <MDBCol size="7">{item.reportedby}</MDBCol>
+                        <MDBCol size="7" sm="6" xs="6" md="6">{item.reportedby}</MDBCol>
                       </MDBRow>
                       <hr />
                       <MDBRow className="p-1">
-                        <MDBCol size="5">
+                        <MDBCol size="5" sm="6" xs="6" md="6">
                           <strong>Reported Date:</strong>
                         </MDBCol>
-                        <MDBCol size="7">{item.Reported_Date}</MDBCol>
+                        <MDBCol size="7" sm="6" xs="6" md="6">{item.Reported_Date}</MDBCol>
                       </MDBRow>
                       <hr />
                       <MDBRow className="p-1">
-                        <MDBCol size="5">
+                        <MDBCol size="5" sm="6" xs="6" md="6">
                           <strong>Occurrence Date:</strong>
                         </MDBCol>
-                        <MDBCol size="7">{item.Ocurence_Date}</MDBCol>
+                        <MDBCol size="7" sm="6" xs="6" md="6">{item.Ocurence_Date}</MDBCol>
                       </MDBRow>
                       <hr />
                       <MDBRow className="p-1">
-                        <MDBCol size="5">
+                        <MDBCol size="5" sm="6" xs="6" md="6">
                           <strong>Crime Type:</strong>
                         </MDBCol>
-                        <MDBCol size="7">{item.Crime_type}</MDBCol>
+                        <MDBCol size="7" sm="6" xs="6" md="6">{item.Crime_type}</MDBCol>
                       </MDBRow>
                       <hr />
                       <MDBRow className="p-1">
-                        <MDBCol size="5">
+                        <MDBCol size="5" sm="6" xs="6" md="6">
                           <strong>Location:</strong>
                         </MDBCol>
-                        <MDBCol size="7">{item.location}</MDBCol>
+                        <MDBCol size="7" sm="6" xs="6" md="6">{item.location}</MDBCol>
                       </MDBRow>
                       <hr />
                       <MDBRow className="p-1">
-                        <MDBCol size="5">
+                        <MDBCol size="5" sm="6" xs="6" md="6">
                           <strong>Province:</strong>
                         </MDBCol>
-                        <MDBCol size="7">{item.Province}</MDBCol>
+                        <MDBCol size="7" sm="6" xs="6" md="6">{item.Province}</MDBCol>
                       </MDBRow>
                       <hr />
                       <MDBRow className="p-1">
-                        <MDBCol size="5">
+                        <MDBCol size="5" sm="6" xs="6" md="6">
                           <strong>Description:</strong>
                         </MDBCol>
-                        <MDBCol size="7">{item.description}</MDBCol>
+                        <MDBCol size="7" sm="6" xs="6" md="6">{item.description}</MDBCol>
                       </MDBRow>
                       <hr />
                       <MDBRow className="p-1 ">
-                        <MDBCol size="5">
+                        <MDBCol size="5" sm="6" xs="6" md="6">
                           <strong>Case Status:</strong>
                         </MDBCol>
-                        <MDBCol size="7" className="red-text">
+                        <MDBCol size="7" sm="6" xs="6" md="6" className="red-text">
                           {item.status}
                         </MDBCol>
                       </MDBRow>
                       <hr />
                       <MDBRow className="p-1">
-                        <MDBCol size="5">
+                        <MDBCol size="5" sm="6" xs="6" md="6">
                           <strong>Crime Scene:</strong>
                         </MDBCol>
                         <MDBCol lg="7" md="3">

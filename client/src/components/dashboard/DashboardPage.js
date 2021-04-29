@@ -12,11 +12,11 @@ const DashboardPage = () => {
           fontSize: "40px",
           fontFamily: "Dancing Script",
         }}
-        className="font-weight-bold signup-signin-heading"
+        className="font-weight-bold signup-signin-heading mt-5"
       >
         Your Reported Cases
       </h4>
-      <div className="heading-line">
+      <div className="heading-line mb-5">
         <div className="heading-line-dot"></div>
       </div>
       <View />
