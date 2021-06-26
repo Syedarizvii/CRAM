@@ -4,6 +4,7 @@ import Features from './Features';
 import Footer from './footer';
 import Parallax from './Parallax';
 import About from './About';
+import MapUse from "./MapUSe";
 
 class Index extends Component {
     state = {}
@@ -15,6 +16,7 @@ class Index extends Component {
                 <Parallax />
                 <Features />
                 <Footer />
+                <MapUse/>
             </div>
         );
     }
