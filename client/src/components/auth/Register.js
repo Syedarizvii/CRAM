@@ -62,7 +62,7 @@ class Register extends Component {
     return (
       <div>
         <Navbar2 />
-        <MDBContainer className="d-flex justify-content-center pt-5 pb-5">
+        <MDBContainer className="d-flex justify-content-center pt-5 pb-5 Signin-Container">
           <MDBRow>
             <MDBCol>
               <form noValidate onSubmit={this.onSubmit}>
@@ -184,7 +184,7 @@ class Register extends Component {
                     <div className="text-center mb-3 " >
                       <button
                         type="submit"
-                        className="btn-block z-depth-1a white-text red-gradient waves-effect waves-light hoverable"
+                        className="btn-block z-depth-1a white-text red-gradient waves-effect waves-light hoverable SigninButton"
                       >
                         Sign Up
                 </button>
