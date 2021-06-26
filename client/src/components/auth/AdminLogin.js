@@ -55,7 +55,7 @@ class Login extends Component {
     return (
       <div>
         <Navbar2 />
-       <MDBContainer className="d-flex justify-content-center align-items-center" style={{paddingTop:"100px"}}>
+       <MDBContainer className="d-flex justify-content-center align-items-center Signin-Container " style={{paddingTop:"100px"}}>
           <MDBRow >
             <MDBCol>
               <form noValidate onSubmit={this.onSubmit}>
@@ -105,7 +105,7 @@ class Login extends Component {
                     <div className="text-center mb-3 ">
                       <button
                         type="submit"
-                        className="btn-block z-depth-1a white-text red-gradient waves-effect waves-light hoverable"
+                        className="btn-block z-depth-1a white-text red-gradient waves-effect waves-light hoverable SigninButton"
                       >
                         Sign In
                       </button>
