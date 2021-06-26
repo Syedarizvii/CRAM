@@ -177,7 +177,7 @@ class View extends Component {
                         <MDBCol size="5" sm="6" xs="6" md="6">
                           <strong>Crime Scene:</strong>
                         </MDBCol>
-                        <MDBCol lg="7" md="3">
+                        <MDBCol  md="3">
                           <img
                             height="250"
                             width="270"
@@ -215,7 +215,7 @@ class View extends Component {
                               }}
                               className="btn btn-primary"
                             >
-                              Assigned To
+                              Enter Case Details
                             </Link>
                             <Link
                               to={"viewcase/" + item._id}

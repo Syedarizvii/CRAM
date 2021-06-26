@@ -193,12 +193,12 @@ left:150px;
   width:100%;
   max-width:160px;
   position:absolute;
-  left:260px;
+  left:240px;
   top:20px;  
 }
 .visualization{
   position : absolute;
-  left:470px;
+  left:425px;
   max-width:270px;
 }
 .Visualize-text{
@@ -207,7 +207,7 @@ left:150px;
   max-width:160px;
   position:absolute;
   top:50px;
-  left:730px;
+  left:675px;
 }
 .reporting{
   height:auto;
@@ -334,14 +334,15 @@ footer p { font-size:13px; color:#CCC; padding-bottom:0px; margin-bottom:8px;}
 
 /* DASHBOARD */
 
-.sidebar-fixed {
+.sidebar-fixed-for-user{
   left: 0;
   top: 0;
   height: 100vh;
   width: 270px;
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
   z-index: 1050;
-  background-color: #fff;
+  background-color: #397BC7;
+  /* background-color: #fff; */
   padding: 1.5rem;
   padding-top: 0;
 }
@@ -360,7 +361,7 @@ footer p { font-size:13px; color:#CCC; padding-bottom:0px; margin-bottom:8px;}
   margin-left: 270px;
 }     
 
-.sidebar-fixed .logo-wrapper img{
+.sidebar-fixed-for-user .logo-wrapper img{
   width: 100%;
   /* padding: 2.5rem; */
 }
@@ -433,7 +434,7 @@ footer p { font-size:13px; color:#CCC; padding-bottom:0px; margin-bottom:8px;}
   color:blue;
 }
 @media (max-width: 1199.98px) {
-  .sidebar-fixed {
+  .sidebar-fixed-for-user{
     display: none;
   }
   .sidebar-fixed-for-admin {
@@ -750,4 +751,19 @@ padding-top: 70px !important;
   padding-right: 0px !important;
   font-size: 15px !important;
 }
+}
+
+
+/*Signin */
+@media screen and (max-width:375px)
+{
+  .Signin-Container{
+    flex-direction: column !important;
+  }
+  .blue-text{
+    margin: none !important;
+  }
+  .SigninButton{
+    width: 200px !important;
+  }
 }
