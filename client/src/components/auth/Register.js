@@ -190,7 +190,7 @@ class Register extends Component {
                 </button>
                     </div>
                   </MDBCardBody>
-                  <MDBModalFooter className="mx-5 pt-3 mb-1">
+                  <MDBModalFooter className="pt-3 mb-1">
                     <p className="large-small black-text d-flex justify-content-end">
                       Already have an Account?
                 <Link to="/login" className="blue-text ml-1 large-font">Log in</Link>
