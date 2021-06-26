@@ -111,8 +111,8 @@ class Login extends Component {
                       </button>
                     </div>
                   </MDBCardBody>
-                  <MDBModalFooter className="mx-5 pt-3 mb-1">
-                    <p className="large-small black-text d-flex justify-content-end">
+                  <MDBModalFooter className="have-an-account pt-3 mb-1">
+                    <p className="large-small black-text d-flex justify-content-end ">
                       Don't have an account yet?
                       <Link to="/otp" className="blue-text ml-1 large-font">
                         Sign Up

@@ -760,10 +760,15 @@ padding-top: 70px !important;
   .Signin-Container{
     flex-direction: column !important;
   }
-  .blue-text{
-    margin: none !important;
+  .have-an-account .blue-text{
+    margin: 0px !important;
+  }
+  .have-an-account {
+    margin-bottom: 0rem !important;
+    margin-left: 0rem !important;
+    margin-right: 0rem !important;
   }
   .SigninButton{
-    width: 200px !important;
+    width: 250px !important;
   }
 }
